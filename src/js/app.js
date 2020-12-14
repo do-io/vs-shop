@@ -14,7 +14,6 @@ const getSettings = () => {
 const getProducts = async(producerId) => {
   try {
     const response = await axios.get(`${BASE_URL}/wine-list?id=${producerId}`)
-    console.log(response.data)
     return response.data
   } catch (error) {
     console.error(error)
@@ -44,7 +43,6 @@ const createProducts = data => {
   productCard.setAttribute('class', 'vs-card')
   const productLabel = document.createElement('div')
   const productImg = document.createElement('img')
-  console.log(data.img)
   productImg.src = data.img
   productLabel.appendChild(productImg)
 
@@ -116,7 +114,6 @@ const addStatesToDom = (stateData, specialShipping) => {
 }
 
 const addProductsToDom = (productData) => {
-  console.log(productData)
   const productsDiv = document.createElement('div')
 
   if (Array.isArray(productData)) {
