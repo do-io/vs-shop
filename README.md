@@ -3,6 +3,7 @@
 THIS IS A WORK IN PROCESS
 
 Using the Vinoshipper Public API v2 creating a shop that can be used by producers to show the products they have for sale
+[Vinoshipper API v2](https://vinoshipper.com/swagger-ui.html#/Wine%20List/wineListUsingGET)
 
 ## Quick Start
 
